@@ -7,8 +7,8 @@ from io import BufferedRandom
 from typing import Any
 from pathlib import Path
 
-from src.mindustry_settings.data_input_stream import DataInputStream
-from src.mindustry_settings.data_output_stream import DataOutputStream
+from .data_input_stream import DataInputStream
+from .data_output_stream import DataOutputStream
 
 
 class _ValueType(Enum):

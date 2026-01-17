@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from src.mindustry_settings.settings import MindustrySettings
+from .settings import MindustrySettings
 
 if __name__ == "__main__":
-    settings = MindustrySettings(Path("../phos.bin"))
+    settings = MindustrySettings(Path("phos.bin"))
     settings.set_value("uuid", "phosphophyllite")
     settings.write_to_disk()
 
