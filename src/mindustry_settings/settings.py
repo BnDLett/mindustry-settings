@@ -80,6 +80,9 @@ class MindustrySettings:
         if type(value) != str: raise TypeError(f"Returned value is not a string.")
         return value
 
+    def get_any(self, key: str) -> Any:
+        return self._settings.get(key)
+
     def set_value(self, key: str, value: Any):
         self._settings[key] = value
         self.__modified = True
