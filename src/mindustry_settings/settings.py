@@ -4,11 +4,11 @@
 import os.path
 from enum import Enum
 from io import BufferedRandom
-from typing import Any, BinaryIO
+from typing import Any
 from pathlib import Path
 
-from mindustry_settings.data_input_stream import DataInputStream
-from mindustry_settings.data_output_stream import DataOutputStream
+from src.mindustry_settings.data_input_stream import DataInputStream
+from src.mindustry_settings.data_output_stream import DataOutputStream
 
 
 class _ValueType(Enum):

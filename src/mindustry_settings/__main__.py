@@ -1,7 +1,6 @@
 from pathlib import Path
 
-from mindustry_settings.data_output_stream import DataOutputStream
-from mindustry_settings.settings import MindustrySettings
+from src.mindustry_settings.settings import MindustrySettings
 
 if __name__ == "__main__":
     settings = MindustrySettings(Path("../phos.bin"))
